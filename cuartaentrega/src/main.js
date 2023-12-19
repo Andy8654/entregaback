@@ -53,7 +53,7 @@ io.on('connection', (socket) => {
         socket.emit('productosActualizados', products);
         socket.emit('mensajeProductoCreado', 'El producto se creó correctamente');
     });
-});
+}); 
 
 //Routes
 app.use('/static', express.static(path.join(__dirname, '/public'))) //path.join() es una concatenacion de una manera mas optima que con el +
